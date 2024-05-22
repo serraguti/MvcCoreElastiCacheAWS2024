@@ -39,6 +39,12 @@
                 asp-route-id="@item.IdCoche" class="btn btn-outline-info">
                     Details
                 </a>
+                <a asp-controller="Coches"
+                    asp-action="SeleccionarFavorito"
+                    asp-route-idcoche="@item.IdCoche"
+                    class="btn btn-primary">
+                    Seleccionar favorito
+                </a>
             </td>
         </tr>
 }
